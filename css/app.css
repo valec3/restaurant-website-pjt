@@ -1,0 +1,140 @@
+:root{
+    --primario:#154245;
+    --black:#333;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --letter-color:#e4cb4c;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+h1,h2{
+    text-transform: capitalize;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    max-width:92% ;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    padding: .8rem 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+.header__logo img{
+    height: 3rem;
+}
+/* NAVBAR */
+
+.navbar a{
+    font-size: 1.2rem;
+    color: var(--letter-color);
+    padding: .5rem 1.5rem;
+    border: .1rem solid transparent;
+    text-transform: capitalize;
+}
+.navbar a.active,.navbar a:hover{
+    color: #fff;
+    border: .1rem solid rgba(205, 170, 124, 0.2);
+}
+.icons i{
+    margin: 0 0 0 .5rem;
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    background: var(--letter-color);
+    text-align: center;
+    font-size: 1.3rem;
+    transition: transform .09s linear;
+}
+.icons i:hover{
+    color: #fff;
+    background: var(--letter-color);
+    transform: rotate(360deg);
+}
+.icons #menu{
+    display: none;
+
+}
+/* FOOTER */
+
+@media (max-width:  991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1rem 2rem;
+    }
+    .header__logo img{
+        height: 7rem;
+    }
+}
+@media (max-width: 768px){
+    /* navbar mq */
+    .icons #menu{
+        display: inline-block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        border-top: .1rem solid rgba(205, 170, 124, .2);
+        border-bottom: .1rem solid rgba(205, 170, 124, .2);
+        padding: 1rem;
+
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+        transition: all .4s linear;
+    }
+    .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    .navbar a{
+        font-size: 1.6rem;
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        background-color: var(--black);
+    }
+    
+}
+/* SLIDERS */
+
+.home .home-slider .slide{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home .home-slider .slide-1{
+    
+}
