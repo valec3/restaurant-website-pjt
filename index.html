@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!-- section header start  -->
@@ -36,42 +39,48 @@
     </header>
     <!-- section slider start -->
     <section class="home" id="home">
-        <div class="home-slider">
+        <div class="swiper home-slider">
             <!-- SLIDERS STARTS -->
-            <div class="wrapper">
-                <div class="slide slide-1">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide-1">
                     <div class="home__content">
-                        <img src="img/" alt="">
+                        <img src="img/badge-1.jpg" alt="">
                         <h3>Deliciosa</h3>
                         <h2>regalo voucher</h2>
                         <p>give away your beloved customers</p>
                         <a href="#" class="btn">Ordena Ahora</a>
                     </div>
                 </div>
-                <div class="slide slide-2">
+                <div class="swiper-slide slide slide-2">
                     <div class="home__content">
-                        <img src="img/" alt="">
+                        <img src="img/badge-1.jpg" alt="">
                         <h3>Venta de 10% this dish</h3>
-                        <h2>The fresh</h2>
+                        <h2>The delicious</h2>
                         <p>Restaurante de comida</p>
                         <a href="#" class="btn">Ordena Ahora</a>
                     </div>
                 </div>
-                <div class="slide slide-3">
+                <div class="swiper-slide slide slide-3">
                     <div class="home__content">
-                        <img src="img/" alt="">
+                        <img src="img/badge-1.jpg" alt="">
                         <h3>Estamos abiertos</h3>
-                        <h2>Frutas frescas</h2>
+                        <h2>Sabor Occidental</h2>
                         <p>You will love it</p>
                         <a href="#" class="btn">Ordena Ahora</a>
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
             <!-- SLIDERS ENDS -->
         </div>
     </section>
-    <!-- section start -->
+    <!-- section welcome start -->
+    <section class="welcome" id="about">
+        <h1 class="heading">BIENVENIDO A KARCHEN</h1>
+    </section>
     <!-- section footer start  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- custom file js -->
     <script src="js/app.js"></script>
 </body>
