@@ -174,7 +174,73 @@ img{
     border-radius: 0;
 }
 
+/* WELCOME */
 
+.welcome{
+    padding: 2rem;
+}
+.welcome .heading{
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1.4px;
+    padding: 0 0 2rem 0;
+}
+.welcome .subheading{
+    text-align: center;
+    color: var(--letter-color);
+    font-size: 1.5rem;
+    padding: 2rem 1.5rem;
+    display: inline-block;
+    background: var(--black);
+    margin: 0 auto 2rem auto;
+}
+.welcome__content{
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+.welcome__card{
+    width: 30%;
+    background-color: var(--black);
+    box-shadow: var(--box-shadow);
+}
+.welcome__card__img{
+    height: 17rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.welcome__card__img img{
+    transition: transform .5s;
+}
+.welcome__card__img img:hover{
+    transform: scale(1.1);
+}
+.welcome__card__text{
+    padding: 1.5rem;
+    color: var(--letter-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome__card__text h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+
+}
+.welcome__card__text p{
+    padding: .7rem 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.welcome__card__text .btn{
+    width: 10rem;
+}
 /* FOOTER */
 
 @media (max-width:  991px){
@@ -224,5 +290,12 @@ img{
     .home-slider .slide .home__content{
         padding: 0;
         margin: 0 auto;
+    }
+    /* mq welcome */
+    .welcome__content{
+        flex-wrap: wrap;
+    }
+    .welcome__card{
+        width: 280px;
     }
 }
